@@ -1,0 +1,20 @@
+repos:
+  - repo: https://gitlab.com/pycqa/flake8
+    rev: 3.8.4
+    hooks:
+      - id: flake8
+        exclude: "admin.py"
+  - repo: https://github.com/timothycrosley/isort
+    rev: 5.6.4
+    hooks:
+      - id: isort
+        exclude: "__init__.py"
+  - repo: https://github.com/PyCQA/pydocstyle
+    rev: 5.1.1
+    hooks:
+      - id: pydocstyle
+        exclude: "__init__.py|apps.py|urls.py|admin.py|tests.py"
+  - repo: https://github.com/psf/black
+    rev: 20.8b1
+    hooks:
+      - id: black
