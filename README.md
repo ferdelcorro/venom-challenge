@@ -27,7 +27,7 @@ The objective is to have a fully working web application that renders images fro
 - Linting
 - CI Configuration
 
-### ¿How to run the code in local?
+### How to run the code in local?
 
 If you want to run the code then you need to clone the repo and then run
 
@@ -37,7 +37,7 @@ $ docker-compose up
 
 in the root of the folder.
 
-### ¿How to run tests?
+### How to run tests?
 
 To run tests you need to create a a virtual env and initialized it
 
@@ -46,4 +46,18 @@ $ virtualenv venv
 $ source venv/bin/activate
 $ pip install -r requirements
 $ python manage.py test
+```
+
+If you want to run the uploaded docker's image then you need to change the `docker-compose.yml` in and replace
+
+```
+build: .
+# for
+image: ferdelcorro/venom-challenge:v1.0.0
+```
+
+If you want you can download the docker's image with
+
+```
+$ docker pull ferdelcorro/venom-challenge:v1.0.0
 ```
