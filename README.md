@@ -39,13 +39,10 @@ in the root of the folder.
 
 ### How to run tests?
 
-To run tests you need to create a a virtual env and initialized it
+To run tests you need to run
 
 ```
-$ virtualenv venv
-$ source venv/bin/activate
-$ pip install -r requirements
-$ python manage.py test
+$ docker-compose exec web python manage.py test
 ```
 
 If you want to run the uploaded docker's image then you need to change the `docker-compose.yml` in and replace
